@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>RoslynAnalyzers.SA1413</id>
+    <version>1.0.0.0</version>
+    <title>Use Trailing Commas In MultiLine Initializers Analyzer</title>
+    <authors>krk</authors>
+    <owners>krk</owners>
+    <licenseUrl>https://github.com/krk/SA1413/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/krk/SA1413</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Implements the StyleCopAnalyzers rule SA1413 as a stand-alone Roslyn analyzer.</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright</copyright>
+    <tags>roslyn analyzers SA1413 stylecop stylecopanalyzers</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+  <!-- The convention for analyzers is to put language agnostic dlls in analyzers\portable50 and language specific analyzers in either analyzers\portable50\cs or analyzers\portable50\vb -->
+  <files>
+    <file src="*.dll" target="analyzers\dotnet\cs" exclude="**\Microsoft.CodeAnalysis.*;**\System.Collections.Immutable.*;**\System.Reflection.Metadata.*;**\System.Composition.*" />
+    <file src="tools\*.ps1" target="tools\" />
+  </files>
+</package>

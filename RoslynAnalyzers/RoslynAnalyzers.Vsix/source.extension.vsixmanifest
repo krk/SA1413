@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="RoslynAnalyzers.SA1413.54120e8b-4023-4756-bcc5-fa3e484e7c22" Version="1.0" Language="en-US" Publisher="krk"/>
+        <DisplayName>RoslynAnalyzers.SA1413</DisplayName>
+        <Description xml:space="preserve">Implements the StyleCopAnalyzers rule SA1413 as a stand-alone Roslyn analyzer.</Description>
+        <MoreInfo>https://github.com/krk/SA1413</MoreInfo>
+        <License>https://github.com/krk/SA1413/blob/master/LICENSE</License>
+        <Tags>roslyn analyzers SA1413 stylecop stylecopanalyzers</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.Pro" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="NSAnalyzers" Path="|NSAnalyzers|"/>
+        <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="NSAnalyzers" Path="|NSAnalyzers|"/>
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0, 16.0)" DisplayName="C# and Visual Basic" />
+    </Prerequisites>
+</PackageManifest>

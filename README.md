@@ -1,5 +1,7 @@
 SA1413 https://github.com/DotNetAnalyzers/StyleCopAnalyzers rule as a stand-alone Roslyn Analyzer.
 
+[![NuGet](https://img.shields.io/nuget/v/RoslynAnalyzers.SA1413.svg?style=plastic)]()
+
 # SA1413
 
 <table>
